@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // -- chatbot translations --
+  // -- chatbot tõlge --
   async function loadChatbot(lang) {
     try {
-      currentLang = lang === "et" ? "ee" : lang; // igaks juhuks
+      currentLang = lang === "et" ? "ee" : lang;
       localStorage.setItem("lang", currentLang);
 
       const res = await fetch(`lang/${currentLang}.json`);
@@ -249,11 +249,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // -- Start chatbot --
   function startChatbot() {
-    addBotMessage(botTranslations.chatbot.greeting);
+    addBotMessage(
+      `${botTranslations.chatbot.greeting}<br>${botTranslations.chatbot.start_intro}`,
+    );
     showStep(steps[currentStep]);
   }
 
-  // -- Step --
+  // -- Steps --
   function showStep(step) {
     if (!step) return;
 

@@ -1,7 +1,7 @@
 let currentLang = localStorage.getItem("lang") || "ee";
 localStorage.setItem("lang", currentLang);
 
-//Abi JSON väärtus
+//-- JSON väärtus --
 function getNestedValue(obj, path) {
   return path.split(".").reduce((acc, part) => acc && acc[part], obj);
 }
@@ -14,7 +14,7 @@ async function translatePage(lang) {
     const response = await fetch(`lang/${lang}.json`);
     const translations = await response.json();
 
-    //data-i18n
+    //-- Data-i18n --
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       const value = getNestedValue(translations, key);
@@ -31,7 +31,7 @@ async function translatePage(lang) {
       }
     });
 
-    //Vaip - opt
+    //-- Vaip - opt --
     const og = document.getElementById("vaip-optgroup");
     const ogKey = "vaip.vaip";
     const ogValue = getNestedValue(translations, ogKey);
@@ -54,7 +54,7 @@ async function translatePage(lang) {
       el.innerText = value;
     });
 
-    //Riided - opt
+    //-- Riided - opt --
     const ogRiided = document.getElementById("riided-optgroup");
     const ogKeyRiided = "riided.riided";
     const ogValueRiided = getNestedValue(translations, ogKeyRiided);
@@ -68,7 +68,7 @@ async function translatePage(lang) {
         if (value) el.text = value;
       });
 
-    //Hügeen - opt
+    //-- Hügeen - opt --
     const ogwc = document.getElementById("wc-optgroup");
     const ogKeywc = "wc.wc";
     const ogValuewc = getNestedValue(translations, ogKeywc);
@@ -82,7 +82,7 @@ async function translatePage(lang) {
         if (value) el.text = value;
       });
 
-    //Moppi - opt
+    //-- Mopid - opt --
     const ogMoppid = document.getElementById("moppid-optgroup");
     const ogKeyMoppid = "mopp.mopp";
     const ogValueMoppid = getNestedValue(translations, ogKeyMoppid);
@@ -96,7 +96,7 @@ async function translatePage(lang) {
         if (value) el.text = value;
       });
 
-    //data-i18n-attr
+    //-- Data-i18n-attr --
     document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
       const key = el.getAttribute("data-i18n-attr");
       const value = getNestedValue(translations, key);
@@ -117,7 +117,7 @@ async function translatePage(lang) {
 
 translatePage(currentLang);
 
-//Keel
+//-- Keel --
 document.querySelectorAll("[data-lang]").forEach((btn) => {
   btn.addEventListener("click", (e) => {
     e.preventDefault();
