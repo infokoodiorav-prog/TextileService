@@ -1,0 +1,552 @@
+@import "flag-icons/css/flag-icons.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --dark-bg: #1a1a1a;
+  --blueish-bg: #004f55;
+  --white: #ffffff;
+  --light-gray: #c0c0c0;
+  --footer-gray: #999999;
+  --turquoise: #00d4d9;
+  --turquoise-dark: #00a1a5;
+  --light-blue: #4dd0e1;
+  --soft-green: #66ffcc;
+  --button-text-dark: #1a1a1a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Montserrat" Arial,
+    Helvetica,
+    sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #1a1a1a, #004f55);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.keeled {
+  position: relative;
+  display: inline-block;
+}
+.keeled-btn {
+  color: #ffff;
+  background: transparent;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.keeled-drop {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background: linear-gradient(120deg, #1a1a1a, #004f55);
+  border: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  min-width: 150px;
+}
+.keeled-drop li a {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #c0c0c0;
+}
+.keeled-drop li a:hover {
+  color: #a19f9f;
+}
+.keeled:hover .keeled-drop {
+  display: block;
+}
+.keeled-drop .show {
+  display: block;
+}
+header {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+header img {
+  width: 100px;
+  height: 50px;
+}
+.peamenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: transparent;
+  gap: 20px;
+}
+.links {
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  background: linear-gradient(120deg, #1a1a1a, #004f55);
+  padding: 0px 10px;
+  gap: 10px;
+  list-style: none;
+  width: 320px;
+}
+.links li {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  border-top: 1px solid #fff;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+.links a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+.links.show {
+  display: block;
+}
+.links a:hover {
+  color: #a19f9f;
+}
+.burger {
+  width: 100%;
+  margin-right: -10px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 32px;
+  border: 1px solid #4f657a;
+  background: linear-gradient(120deg, #1a1a1a, #004f55);
+  cursor: pointer;
+  padding: 5px;
+}
+.burger:hover {
+  background-color: #00a5aa;
+}
+.riba {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+.burger.open span:nth-child(1) {
+  background-color: #c0c0c0;
+  transform: rotate(45deg) translate(3px, 5px);
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  background-color: #c0c0c0;
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+main h1 {
+  text-align: center;
+  color: #fff;
+}
+main h2 {
+  text-align: center;
+  color: #fff;
+}
+main h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 3%;
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 1px solid #fff;
+  width: 90%;
+}
+main p {
+  margin-top: 15px;
+  margin-left: 10%;
+  text-align: center;
+  color: #fff;
+}
+.lahendused h2,
+.riided h2,
+.intro h2,
+.wc h2,
+.vim h2 {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.lahendused p,
+.riided p,
+.intro p,
+.wc p,
+.vim p {
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+}
+.joon {
+  border: none;
+  background-color: #fff;
+  height: 2px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 3px;
+}
+.tooted {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.nupp {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+}
+.pildikast {
+  text-align: center;
+  max-width: 320px;
+  position: relative;
+  width: 320px;
+  height: 250px;
+  display: block;
+  cursor: pointer;
+}
+.pildikast input {
+  display: none;
+}
+.pildikast img,
+.pildikast .tekst {
+  border-radius: 15px;
+  max-width: 320px;
+  height: 100%;
+}
+.pildikast img {
+  object-fit: fill;
+  transition: opacity 0.3s ease;
+}
+#seep {
+  border-radius: 15px;
+  background-color: #fff;
+}
+.pildikast .tekst {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.pildikast .tekst p {
+  margin-right: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+.pildikast .tekst h2 {
+  text-align: center;
+}
+.pildikast input:checked ~ img {
+  opacity: 0;
+}
+.pildikast input:checked ~ .tekst {
+  opacity: 1;
+}
+
+.pildikast::after {
+  max-width: 320px;
+  content: attr(data-text);
+  position: absolute;
+  top: 90%;
+  left: 1%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #cce4ff;
+  font-size: 12px;
+  padding: 3px 3px;
+  border-radius: 15px;
+  transition: opacity 0.3s ease;
+}
+.pildikast:has(input:checked)::after {
+  opacity: 0;
+}
+.pildi-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.pildi-wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+}
+.varvivalik-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.pildikast:has(input:checked) .varvivalik-btn {
+  display: none;
+}
+
+.varvivalik-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.popup-content {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  height: 260px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.popup-img {
+  height: 250px;
+  width: 100%;
+  display: block;
+}
+
+.nool {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.nool.vasak {
+  left: 0;
+}
+.nool.parem {
+  right: 0;
+}
+
+.close-popup {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#sticky-btn {
+  position: fixed;
+  width: 100%;
+  bottom: -1px;
+  padding: 10px 10px;
+  background: linear-gradient(120deg, #1a1a1a, #004f55);
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  z-index: 1000;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.cta {
+  display: flex;
+  background: linear-gradient(120deg, #1a1a1a, #004f55);
+  width: 250px;
+  padding: 10px 10px;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  justify-self: center;
+  justify-content: center;
+}
+.cta:hover {
+  background: linear-gradient(-120deg, #1a1a1a, #004f55);
+  border: 1px solid #fff;
+}
+.sticky-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.sticky-popup > div,
+.sticky-popup h2 {
+  background-color: none;
+  font-size: 20px;
+  padding: 0px;
+}
+.sticky-popup p {
+  font-size: 15px;
+}
+.sticky-popup .close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: black;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.close-popup:hover {
+  color: #000000;
+  background-color: #fff;
+}
+
+.contact-form {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  max-width: 500px;
+  overflow-y: auto;
+  background: linear-gradient(120deg, #1a1a1a, #004f55);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.contact-form .close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  cursor: pointer;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.contact-form select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+select #väljas {
+  background-color: #4dd0e1;
+}
+.submit-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: linear-gradient(120deg, #1a1a1a, #004f55);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background: linear-gradient(-120deg, #1a1a1a, #004f55);
+  border: 1px solid #fff;
+}
+.up-btn {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(-120deg, #1a1a1a, #004f55);
+  color: white;
+  padding: 7px 10px;
+  border-radius: 0%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .burger {
+    display: none;
+  }
+  .links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 30px;
+    background: none;
+    width: auto;
+    padding: 0;
+  }
+
+  .links li {
+    border: none;
+    height: auto;
+  }
+
+  .links a {
+    text-transform: none;
+    font-size: 18px;
+  }
+}

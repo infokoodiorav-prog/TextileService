@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt – Textile Service</title>
+    <link rel="stylesheet" href="css/kontakt.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+    <link rel="icon" type="image/png" href="png/logo3.png" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="png/logo2.png"
+          alt="Textile Service Logo"
+          width="16px"
+          height="16px"
+          loading="lazy"
+      /></a>
+      <nav class="peamenu">
+        <div class="keeled">
+          <button class="keeled-btn" aria-label="Vali keel">
+            <i class="fa fa-globe"></i> ▼
+          </button>
+          <ul class="keeled-drop">
+            <li>
+              <a href="#" data-lang="ee"><span class="fi fi-ee"></span>Eesti</a>
+            </li>
+            <li>
+              <a href="#" data-lang="fin"
+                ><span class="fi fi-fi"></span>Soome</a
+              >
+            </li>
+            <li>
+              <a href="#" data-lang="en"
+                ><span class="fi fi-gb"></span>Inglise</a
+              >
+            </li>
+            <li>
+              <a href="#" data-lang="ru"><span class="fi fi-ru"></span>Vene</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="burger" aria-label="Ava menüü">
+          <span class="riba"></span>
+          <span class="riba"></span>
+          <span class="riba"></span>
+        </button>
+
+        <ul class="links">
+          <li>
+            <a href="lahendused.html" data-i18n="nav.solutions">Lahendused</a>
+          </li>
+          <li><a href="meist.html" data-i18n="nav.about">Meist</a></li>
+          <li><a href="uudised.html" data-i18n="nav.news">Uudised</a></li>
+          <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <button id="chatbot-toggle">💬</button>
+
+      <div id="chatbot" style="display: none">
+        <header>Textile Service</header>
+
+        <div id="chatMessages" class="messages"></div>
+
+        <div id="chatOptions" class="options"></div>
+      </div>
+
+      <div id="modalOverlay" class="modal-overlay" style="display: none">
+        <div class="modal">
+          <button id="closeModal" class="close-btn">✕</button>
+          <div id="formContainer"></div>
+        </div>
+      </div>
+      <section class="kontakt-section">
+        <h1 data-i18n="kontakt.header">Võta meiega ühendust</h1>
+        <p data-i18n="kontakt.sub_header">
+          Saada meile sõnum või küsi pakkumist. Vastame esimesel võimalusel!
+        </p>
+
+        <div class="kontakt-container">
+          <form id="kontaktForm">
+            <input
+              type="text"
+              name="nimi"
+              data-i18n="form.placeholder_name"
+              placeholder="Nimi"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              data-i18n="form.placeholder_email"
+              placeholder="E-mail"
+              required
+            />
+            <select name="teenus" required>
+              <option value="" data-i18n="form.option_select" disabled selected>
+                Vali teenus
+              </option>
+              <option data-i18n="form.option1" value="vaibad">Vaibarent</option>
+              <option data-i18n="form.option2" value="riided">Tööriided</option>
+              <option data-i18n="form.option3" value="sanitaar">
+                Sanitaarlahendus
+              </option>
+              <option data-i18n="form.option4" value="mopid">
+                Mopid ja käterätid
+              </option>
+              <option data-i18n="form.option5" value="muu">Muu</option>
+            </select>
+            <textarea
+              name="sõnum"
+              rows="4"
+              placeholder="Sinu sõnum"
+              data-i18n="form.option6"
+              required
+            ></textarea>
+            <button type="submit" data-i18n="form.cta_btn" class="cta-kaks">
+              Saada
+            </button>
+          </form>
+
+          <div class="kontakt-info">
+            <h2 data-i18n="kontakt.sub">Kontaktinfo</h2>
+            <div class="kogu">
+              <div class="kontakt">
+                <p><i class="fa-solid fa-phone"></i> +372 555 1234</p>
+                <p>
+                  <i class="fa-solid fa-envelope"></i> info@textileservice.ee
+                </p>
+                <p data-i18n="kontakt.koht">
+                  <i class="fa-solid fa-location-dot"></i> Tallinn, Eesti
+                </p>
+              </div>
+              <div class="pilt">
+                <img src="png/logo3.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr class="joon" />
+    <footer class="footer">
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#" data-i18n="footer.privacy">Privaatsus</a>
+        <a href="#" data-i18n="footer.cookies">Küpsised</a>
+        <a href="#" data-i18n="footer.rights">Õiguslik teave</a>
+      </div>
+    </footer>
+    <hr class="joon" />
+    <script src="js/kontakt.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/translate.js"></script>
+  </body>
+</html>

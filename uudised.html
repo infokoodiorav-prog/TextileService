@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="png/logo3.png" sizes="16x16" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uudised - Textile Service</title>
+    <link rel="stylesheet" href="css/chatbot.css" />
+    <link rel="stylesheet" href="css/uudised.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="png/logo2.png"
+          alt="Textile Service Logo"
+          width="16px"
+          height="16px"
+          loading="lazy"
+      /></a>
+      <nav class="peamenu">
+        <div class="keeled">
+          <button class="keeled-btn" aria-label="Vali keel">
+            <i class="fa fa-globe"></i> ▼
+          </button>
+          <ul class="keeled-drop">
+            <li>
+              <a href="#" data-lang="ee"><span class="fi fi-ee"></span>Eesti</a>
+            </li>
+            <li>
+              <a href="#" data-lang="fin"
+                ><span class="fi fi-fi"></span>Soome</a
+              >
+            </li>
+            <li>
+              <a href="#" data-lang="en"
+                ><span class="fi fi-gb"></span>Inglise</a
+              >
+            </li>
+            <li>
+              <a href="#" data-lang="ru"><span class="fi fi-ru"></span>Vene</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="burger" aria-label="Ava menüü">
+          <span class="riba"></span>
+          <span class="riba"></span>
+          <span class="riba"></span>
+        </button>
+
+        <ul class="links">
+          <li>
+            <a href="lahendused.html" data-i18n="nav.solutions">Lahendused</a>
+          </li>
+          <li><a href="meist.html" data-i18n="nav.about">Meist</a></li>
+          <li><a href="uudised.html" data-i18n="nav.news">Uudised</a></li>
+          <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="uudised-sissejuhatus">
+        <h1 data-i18n="uudised.sisse">Viimased uudised</h1>
+        <p data-i18n="uudised.sisse_p">Jälgi meie värskeid teateid, innovatsioone ja ettevõtte arenguid.</p>
+      </section>
+
+      <section class="uudised-grid">
+        <article class="uudis">
+          <img src="png/tebunie_svara_uab-667.jpg" alt="Vaipade hooldus" />
+          <div class="uudis-sisu">
+            <h2 data-i18n="uudised.hooldus">Vaipade hooldus</h2>
+            <p data-i18n="uudised.hooldus_p">
+              Meie uus vaipade hooldusprogramm tagab kiirema ja tõhusama teenuse
+              igale kliendile.
+            </p>
+            <a href="#" class="cta-nupp" data-i18n="uudised.cta">Loe edasi</a>
+          </div>
+        </article>
+
+        <article class="uudis">
+          <img
+            src="png/työvaatepalvelu.jpg.webp"
+            alt="Tööriiete uus kollektsioon"
+          />
+          <div class="uudis-sisu">
+            <h2 data-i18n="uudised.koll">Tööriiete uus kollektsioon</h2>
+            <p data-i18n="uudised.koll_p">
+              Esitleme oma uut kollektsiooni, mis tagab maksimaalse mugavuse,
+              nähtavuse ja turvalisuse tööl.
+            </p>
+            <a href="#" class="cta-nupp" data-i18n="uudised.cta">Loe edasi</a>
+          </div>
+        </article>
+
+        <article class="uudis">
+          <img
+            src="png/tebunie_svara_uab-192.jpg"
+            alt="Sanitaarlahenduste uuendused"
+          />
+          <div class="uudis-sisu">
+            <h2 data-i18n="uudised.san">Sanitaarlahenduste uuendused</h2>
+            <p data-i18n="uudsised.san_p">Uued lahendused tualettruumides – puhtus ja mugavus iga päev.</p>
+            <a href="#" class="cta-nupp" data-i18n="uudised.cta">Loe edasi</a>
+          </div>
+        </article>
+
+        <article class="uudis">
+          <img
+            src="png/Elis_2020_0820_German_MF_mit-Glow_Truck_service-agent.jpg"
+            alt="Vastutus keskkonna eest"
+          />
+          <div class="uudis-sisu">
+            <h2 data-i18n="uudised.vast">Ettevõtte vastutus keskkonna eest</h2>
+            <p data-i18n="uudised.vast_p">
+              Ringmajanduslikud lahendused aitavad vähendada keskkonnajalajälge
+              ja kulusid.
+            </p>
+            <a href="#" class="cta-nupp" data-i18n="uudised.cta">Loe edasi</a>
+          </div>
+        </article>
+      </section>
+
+         <button id="chatbot-toggle">💬</button>
+
+      <div id="chatbot" style="display: none">
+        <header>Textile Service</header>
+
+        <div id="chatMessages" class="messages"></div>
+
+        <div id="chatOptions" class="options"></div>
+      </div>
+
+      <div id="modalOverlay" class="modal-overlay" style="display: none">
+        <div class="modal">
+          <button id="closeModal" class="close-btn">✕</button>
+          <div id="formContainer"></div>
+        </div>
+      </div>
+
+
+
+    </main>
+    <hr class="joon" />
+    <footer class="footer">
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#" data-i18n="footer.privacy">Privaatsus</a>
+        <a href="#" data-i18n="footer.cookies">Küpsised</a>
+        <a href="#" data-i18n="footer.rights">Õiguslik teave</a>
+      </div>
+      </div>
+    <hr class="joon" />
+    <script src="js/chatbot.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/translate.js"></script>
+  </body>
+</html>

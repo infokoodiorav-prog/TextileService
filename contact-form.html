@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Form</title>
+    <link rel="stylesheet" href="css/chatbot.css" />
+  </head>
+  <body>
+    <button id="chatbot-toggle">💬</button>
+
+    <div id="chatbot" style="display: none">
+      <header>Textile Service</header>
+
+      <div id="chatMessages" class="messages"></div>
+
+      <div id="chatOptions" class="options"></div>
+    </div>
+
+    <div id="modalOverlay" class="modal-overlay" style="display: none">
+      <div class="modal">
+        <button id="closeModal" class="close-btn">✕</button>
+        <div id="formContainer"></div>
+      </div>
+    </div>
+
+    <script src="js/chatbot.js"></script>
+    <script src="js/translate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="png/logo3.png" sizes="16x16" />
+    <title>Textile Service</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="png/logo2.png"
+          alt="Textile Service Logo"
+          width="16px"
+          height="16px"
+          loading="lazy"
+      /></a>
+      <nav class="peamenu">
+        <div class="keeled">
+          <button class="keeled-btn" aria-label="Vali keel">
+            <i class="fa fa-globe"></i> ▼
+          </button>
+          <ul class="keeled-drop">
+            <li>
+              <a href="#" data-lang="ee"><span class="fi fi-ee"></span>Eesti</a>
+            </li>
+            <li>
+              <a href="#" data-lang="fin"
+                ><span class="fi fi-fi"></span>Soome</a
+              >
+            </li>
+            <li>
+              <a href="#" data-lang="en"
+                ><span class="fi fi-gb"></span>Inglise</a
+              >
+            </li>
+            <li>
+              <a href="#" data-lang="ru"><span class="fi fi-ru"></span>Vene</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="burger" aria-label="Ava menüü">
+          <span class="riba"></span>
+          <span class="riba"></span>
+          <span class="riba"></span>
+        </button>
+
+        <ul class="links">
+          <li>
+            <a href="lahendused.html" data-i18n="nav.solutions">Lahendused</a>
+          </li>
+          <li><a href="meist.html" data-i18n="nav.about">Meist</a></li>
+          <li><a href="uudised.html" data-i18n="nav.news">Uudised</a></li>
+          <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="karusell-container">
+        <div class="karusell-track">
+          <div class="slide">
+            <img src="png/esimene.jpg" alt="Porivaiba vahetus" loading="lazy" />
+            <div class="taga">
+              <h2 class="pealkiri" data-i18n="corusel.title_main">
+                Vaibarent - stiil, turvalisus ja praktilisus igas ruumis.
+              </h2>
+              <p class="lisa" data-i18n="corusel.title_sub">
+                Kvaliteetsed vaibad aitavad hoida ruumid puhtad ja esinduslikud
+                ning loovad külastajatele meeldiva esmamulje. Hoolitseme kogu
+                teenuse eest - vaipade vahetusest kuni hoolduseni.
+              </p>
+              <button class="nupp">
+                <a href="lahendused.html#vaibad" data-i18n="corusel.title_btn"
+                  >Vaata lisa</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="png/teine.jpg" alt="Tööriided" loading="lazy" />
+            <div class="mis">
+              <h2 class="pealkiri" data-i18n="corusel.title_main2">
+                Terviklik tööriiete lahendus igale erialale
+              </h2>
+              <p class="lisa" data-i18n="corusel.title_sub2">
+                Läbimõeldud töörõivalahendused, mis tagavad töötajatele
+                mugavuse, turvalisuse ja professionaalse välimuse igas
+                tööstusharus.
+              </p>
+              <button class="nupp2">
+                <a href="lahendused.html#riided" data-i18n="corusel.title_btn2"
+                  >Vaata lisa</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img
+              src="png/kolmas.jpg"
+              alt="Tualettruumi tarvikud"
+              loading="lazy"
+            />
+            <div class="kes">
+              <h2 class="pealkiri" data-i18n="corusel.title_main3">
+                Tualettruumid, mis töötavad sinu kasuks
+              </h2>
+              <p class="lisa" data-i18n="corusel.title_sub3">
+                Usaldusväärsed ja kaasaegsed lahendused puhtaks, mugavaks ja
+                professionaalseks keskkonnaks.
+              </p>
+              <button class="nupp3">
+                <a href="lahendused.html#wc" data-i18n="corusel.title_btn3"
+                  >Vaata lisa</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="png/koos.png" alt="Mopid ja käterätikud" loading="lazy" />
+            <div class="kus">
+              <h2 class="pealkiri" data-i18n="corusel.title_main4">
+                Puhas ja lihtne - käterätikud ja mopid igapäevatööks
+              </h2>
+              <p class="lisa" data-i18n="corusel.title_sub4">
+                Rendi kvaliteetsed, puhtad ja alati töökorras töövahendid oma
+                ettevõttele.
+              </p>
+              <button class="nupp4">
+                <a href="#" data-i18n="corusel.title_btn4">Vaata lisa</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="prev" aria-label="Eelmine slaid">&#10094;</button>
+        <button class="next" aria-label="Järgmine slaid">&#10095;</button>
+      </div>
+
+      <hr class="joon" />
+
+      <div class="sissejuhatus">
+        <h1 data-i18n="intro.header">
+          Tekstiili-, töörõiva- ja sanitaarteenused ettevõtetele
+        </h1>
+        <p data-i18n="intro.sub_header">
+          Ringmajanduspõhised rendi- ja hooldusteenused vaipadele, töörõivastele
+          ja sanitaarlahendustele – tagame töötajatele ja klientidele puhta,
+          mugava ja turvalise töökeskkonna iga päev, vähendades samal ajal
+          kulusid ja keskkonnamõju.
+        </p>
+      </div>
+
+      <hr class="joon" />
+
+      <section class="eelised">
+        <h2 data-i18n="benefits.benefit_header">Miks valida meid?</h2>
+        <ul>
+          <li data-i18n="benefits.benefit1">
+            <i class="fa-solid fa-arrows-rotate"></i> Muretu teenus - pesu,
+            hooldus ja asendused on meie vastutada.
+          </li>
+          <li data-i18n="benefits.benefit2">
+            <i class="fa-solid fa-award"></i> Tõestatud kvaliteet - rahulolevad
+            kliendid üle kogu maailma.
+          </li>
+          <li data-i18n="benefits.benefit3">
+            <i class="fa-solid fa-leaf"></i> Kestlik lahendus - ringmajandus ja
+            väiksem keskkonnajalajälg.
+          </li>
+          <li data-i18n="benefits.benefit4">
+            <i class="fa-solid fa-handshake"></i> Usaldusväärne partner -
+            kohalolek ja tugi igapäevases töös.
+          </li>
+        </ul>
+
+        <div class="cta">
+          <a
+            href="lahendused.html"
+            class="cta-nupp"
+            data-i18n="benefits.benefit_btn"
+            >Vaata lahendusi</a
+          >
+          <button
+            id="openForm"
+            class="cta-kaks"
+            data-i18n="benefits.benefit_btn2"
+          >
+            Küsi pakkumist
+          </button>
+        </div>
+      </section>
+      <button id="chatbot-toggle">💬</button>
+
+      <div id="chatbot" style="display: none">
+        <header>Textile Service</header>
+
+        <div id="chatMessages" class="messages"></div>
+
+        <div id="chatOptions" class="options"></div>
+      </div>
+
+      <div id="modalOverlay" class="modal-overlay" style="display: none">
+        <div class="modal">
+          <button id="closeModal" class="close-btn">✕</button>
+          <div id="formContainer"></div>
+        </div>
+      </div>
+
+      <section>
+        <hr class="joon" />
+        <div class="harud">
+          <h2 data-i18n="clients.header">Peamised kliendid</h2>
+          <div class="kliendid">
+            <ul>
+              <li>
+                <img
+                  src="png/restaurant.png"
+                  alt="Toitlustus"
+                  width="40px"
+                  height="40px"
+                  loading="lazy"
+                /><span data-i18n="clients.catering">Toitlustus</span
+                ><span class="hover" data-i18n="clients.catering_hover"
+                  >Kohvikud, restoranid,<br />
+                  baarid, pubid, jt.</span
+                >
+              </li>
+              <li>
+                <img
+                  src="png/hotel.png"
+                  alt="Majutus"
+                  width="40px"
+                  height="40px"
+                  loading="lazy"
+                /><span data-i18n="clients.housing">Majutus</span
+                ><span class="hover" data-i18n="clients.housing_hover"
+                  >Hotellid, hostelid,<br />
+                  kortermajad, AirBnb, jt.</span
+                >
+              </li>
+              <li>
+                <img
+                  src="png/protection.png"
+                  alt="Tervishoid"
+                  width="40px"
+                  height="40px"
+                  loading="lazy"
+                  data-i18n="clients.healthcare"
+                /><span data-i18n="clients.healthcare">Tervishoid</span
+                ><span class="hover" data-i18n="clients.healthcare_hover"
+                  >Haiglad, apteegid,<br />
+                  hooldekodud, arstikeskused, jt.</span
+                >
+              </li>
+              <li>
+                <img
+                  src="png/education.png"
+                  alt="Haridus"
+                  width="40px"
+                  height="40px"
+                  loading="lazy"
+                /><span data-i18n="clients.education">Haridus</span
+                ><span class="hover" data-i18n="clients.education_hover"
+                  >Koolid, lasteaiad,<br />
+                  kutse - ja erikoolid, ülikoolid, jt.</span
+                >
+              </li>
+              <li>
+                <img
+                  src="png/factory.png"
+                  alt="Tööstus"
+                  width="40px"
+                  height="40px"
+                  loading="lazy"
+                /><span data-i18n="clients.factory">Tööstus</span
+                ><span class="hover" data-i18n="clients.factory_hover"
+                  >Tootmine, tehased,<br />
+                  laod, remonditöökojad, jt.</span
+                >
+              </li>
+              <li>
+                <img
+                  src="png/store.png"
+                  alt="Kaubandus"
+                  width="40px"
+                  height="40px"
+                  class="pood"
+                  loading="lazy"
+                /><span data-i18n="clients.markenting">Kaubandus</span
+                ><span class="hover" data-i18n="clients.marketing_hover"
+                  >Elektroonika-, riide -, toidupoed, <br />kaubanduskeskused
+                  jt.</span
+                >
+              </li>
+              <li>
+                <img
+                  src="png/briefcase.png"
+                  alt="Teenindus"
+                  width="40px"
+                  height="40px"
+                  loading="lazy"
+                /><span data-i18n="clients.business">Teenindus</span
+                ><span class="hover" data-i18n="clients.business_hover"
+                  >Kontorid, äripinnad,<br />
+                  ilusalongid, juuksurid, jt.</span
+                >
+              </li>
+              <li>
+                <img
+                  src="png/court.png"
+                  alt="Riigiasutused"
+                  width="40px"
+                  height="40px"
+                  loading="lazy"
+                /><span data-i18n="clients.goverment">Riigiasutused</span
+                ><span class="hover" data-i18n="clients.goverment_hover"
+                  >Omavalitused, politsei,<br />
+                  päästeamet, kiirabi, kohtumajad,jt.</span
+                >
+              </li>
+              <li>
+                <img
+                  src="png/weights.png"
+                  alt="Spordi- ja kultuuriasutused"
+                  width="40px"
+                  height="40px"
+                  loading="lazy"
+                /><span data-i18n="clients.fun"
+                  >Spordi- ja kultuuriasutused</span
+                ><span class="hover" data-i18n="clients.fun_hover"
+                  >Spordi- ja veekeskused,<br />
+                  raamatukogud, muuseumid, jt.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <button class="töövorm" id="avatöövorm" data-i18n="clients.fun_btn">
+            Ei leidnud enda valdkonda? Kirjuta meile.
+          </button>
+        </div>
+
+        <div id="popupForm" class="popup">
+          <div class="popup-content">
+            <button class="close-popup">X</button>
+            <h2 data-i18n="form.header">Küsi pakkumist</h2>
+            <form id="contactForm">
+              <input
+                type="text"
+                placeholder="Nimi"
+                required
+                data-i18n="form.placeholder_name"
+              />
+              <input
+                type="email"
+                placeholder="E-mail"
+                required
+                data-i18n="form.placeholder_email"
+              />
+              <select
+                id="teenus"
+                name="teenus"
+                required
+                data-i18n="form.placeholder_service"
+              >
+                <option
+                  value=""
+                  disabled
+                  selected
+                  data-i18n="form.option_select"
+                >
+                  Vali teenus
+                </option>
+                <option value="vaibad" data-i18n="form.option1">
+                  Vaibarent
+                </option>
+                <option value="riided" data-i18n="form.option2">
+                  Tööriided
+                </option>
+                <option value="sanitaarlahendus" data-i18n="form.option3">
+                  Sanitaarlahendus
+                </option>
+                <option value="mopidjakäterätid" data-i18n="form.option4">
+                  Mopid ja käterätikud
+                </option>
+                <option value="muu" data-i18n="form.option5">Muu</option>
+              </select>
+              <textarea
+                data-i18n="form.option6"
+                placeholder="Sinu sõnum"
+                name="paringuTekst"
+                rows="4"
+              ></textarea>
+              <button type="submit" class="cta-kaks" data-i18n="form.cta_btn">
+                Saada
+              </button>
+            </form>
+            <p class="form-note" data-i18n="form.cta_btn_note">
+              Saadetud andmed töödeldakse vastavalt privaatsuspõhimõtetele.
+            </p>
+          </div>
+        </div>
+
+        <hr class="joon" />
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#" data-i18n="footer.privacy">Privaatsus</a>
+        <a href="#" data-i18n="footer.cookies">Küpsised</a>
+        <a href="#" data-i18n="footer.rights">Õiguslik teave</a>
+      </div>
+    </footer>
+    <hr class="joon" />
+
+    <script src="js/index.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/translate.js"></script>
+  </body>
+</html>
