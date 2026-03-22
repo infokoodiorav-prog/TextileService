@@ -1,4 +1,4 @@
-let currentLang = localStorage.getItem("lang") || "et";
+let currentLang = localStorage.getItem("lang") || "ee";
 localStorage.setItem("lang", currentLang);
 
 //Abi JSON väärtus
