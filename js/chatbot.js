@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const chatMessages = document.getElementById("chatMessages");
   const chatOptions = document.getElementById("chatOptions");
   const formContainer = document.getElementById("formContainer");
-  const overlay = document.getElementById("modalOverlay");
-  const closeBtn = document.getElementById("closeModal");
 
   // -- State --
   let botTranslations = {};
