@@ -100,9 +100,9 @@ git clone https://github.com/infokoodiorav-prog/Textile-Service.git
 ```
 
 2. Navigate into the project folder:
-    cd Textile-Service
+- cd Textile-Service
 
-3. Open the project:
-    Open index.html in your browser
+4. Open the project:
+ - Open index.html in your browser
 
   
